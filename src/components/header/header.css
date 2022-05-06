@@ -1,0 +1,93 @@
+
+header {
+    height: 100vh;
+    padding-top: 2rem;  
+}
+
+.text-light{
+    margin: 0.5rem 0 2rem 0 ;
+}
+
+.myimgbox{
+    width: 15rem;
+    height: 20rem;
+    margin: auto;
+    left: calc(50% - 15rem);
+    margin-top: 4rem; 
+    /* margin-bottom: 4rem ; */
+    padding: 2rem 4.5rem 2.5rem 1.5rem;
+    border-radius: 12rem 12rem 0 0 ;
+    background: linear-gradient(rgba(0, 0, 255, 0.461), transparent);
+}
+
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;  
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;    
+    margin-right: 10% ; 
+    font-size: 0.9rem;   
+}
+
+.header{
+    /* border: 2px solid black;  */
+    margin-top: 5rem;
+}
+
+.myimgbox > img {
+    width: 110% ;  
+    height: 100% ;    
+}
+
+.btn{
+    text-decoration: none ;   
+    background-color: rgba(0, 0, 255, 0.928) ;  
+    border: none ;  
+    padding: 10px ;    
+    border-radius: 6px ;   
+    font-family: sans-serif ;   
+    color: white ;    
+    box-shadow: rgba(176, 173, 248, 0.133) 0px 1px 2px, rgba(166, 160, 236, 0.174) 0px 2px 4px, rgba(72, 56, 245, 0.12) 0px 4px 8px, rgba(25, 0, 251, 0.07) 0px 8px 16px, rgba(88, 79, 255, 0.097) 0px 16px 32px, rgba(165, 149, 236, 0.07) 0px 32px 64px;
+    margin: 0px 10px; 
+}
+
+/* =========== header socials =============== */
+
+
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem; 
+    margin-left: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header_socials::after {
+    content: "";
+    width: 2px;
+    height: 3rem;
+    background: var(--color-primary);
+}
+
+
+/* ============= media queries (tab devics ) =========== */
+
+@media screen and (max-width: 1024px) {
+    .header{
+        height: 90vh; 
+    }
+ }
+ 
+ /* ============= media queries (mobile devics ) =========== */
+ 
+ @media screen and (max-width: 600px) {
+    .header{
+        height: 80px;
+    }
+ }
+ 
+
